@@ -4,16 +4,19 @@ import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 // import PropTypes from 'prop-types';
 
 
-const routes = [
-    { path: '/', name: 'Home', id: 'home' },
-    { path: '/about', name: 'About', id: 'about' },
-    { path: '/services', name: 'Services', id: 'services' },
-    { path: '/contact', name: 'Contact', id: 'contact' },
-    { path: '/blog/:id', name: 'Blog Post', id: 'blog-post' },
-  ];
-  
+
 
 const NavBar = () => {
+
+    const routes = [
+        { path: '/', name: 'Home', id: 'home' },
+        { path: '/about', name: 'About', id: 'about' },
+        { path: '/services', name: 'Services', id: 'services' },
+        { path: '/contact', name: 'Contact', id: 'contact' },
+        { path: '/blog/:id', name: 'Blog Post', id: 'blog-post' },
+      ];
+      
+
     const [open, setOpen] = useState(false)
     return (
         <nav className="bg-yellow-300 p-6">
